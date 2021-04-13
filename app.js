@@ -2,6 +2,8 @@ const express = require("express")
 const app = express();
 const cors = require("cors");
 const { spotifyRoute } = require("./routes/spotify");
+require('dotenv').config();
+
 const corsOption = {
     origin: "*",
     optionsSuccessStatus: 200
