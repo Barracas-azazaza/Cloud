@@ -13,6 +13,6 @@ app.use(express.json());
 
 app.use('/api/music', spotifyRoute)
 
-app.listen( 3000,()=>{
-    console.log("Corriendo servidor en el puerto " + 3000)
+app.listen( process.env.port || 3000,()=>{
+    console.log("Corriendo servidor en el puerto " +  process.env.port || 3000)
 });
